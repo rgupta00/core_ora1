@@ -8,6 +8,37 @@ interface Stack {
 }
 //me --- > ashok        rajat Stack : pop and push 
 
+class StackAnita implements Stack {
+
+    private int top;
+    private final int SIZE = 5;
+    private int arr[];
+
+    public StackAnita() {
+        arr = new int[SIZE];
+        top = -1;
+    }
+
+    public void push(int data) {
+        if (top == SIZE - 1) {
+            System.out.println("stack overflow");
+        } else {
+            arr[++top] = data;
+        }
+    }
+
+    public int pop() {
+        if (top == -1) {
+            System.out.println("stack underflow");
+            return -999;
+        } else {
+            return arr[top--];
+        }
+    }
+}
+
+
+
 class StackRajat implements Stack {
 
     private int top;
@@ -70,7 +101,7 @@ public class B_StackClass {
 
     public static void main(String[] args) {
 
-        Stack stack = new StackRajat();
+        Stack stack = new StackAnita();
 //
         stack.push(44);
         stack.push(4);
