@@ -11,4 +11,5 @@
         <maven.compiler.target>11</maven.compiler.target>
         <exec.mainClass>com.mycompany.day1.Day1</exec.mainClass>
     </properties>
+    <name>day1-copy</name>
 </project>
