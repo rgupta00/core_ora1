@@ -1,10 +1,10 @@
 package calapp.logic;
 
-import calapp.internal.CalUtil;
+import calapp.internal.InternalLogic;
 
 public class Cal {
-	CalUtil calUtil=new CalUtil();
+   private InternalLogic internalLogic=new InternalLogic();
 	public int add(int a, int b) {
-		return calUtil.add(a, b);
+		return internalLogic.add(a, b) ;
 	}
 }
